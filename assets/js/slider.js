@@ -57,9 +57,9 @@ selectCategory.addEventListener('change', (event) => {
 
   products.forEach((product) => {
     if (selectedCategory === 'all') {
-      product.style.display = 'block';
+      product.style.display = 'flex';
     } else if (product.dataset.category === selectedCategory) {
-      product.style.display = 'block';
+      product.style.display = 'flex';
     } else {
       product.style.display = 'none';
     }
