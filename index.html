@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ecommerce Site</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Category</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Career</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="user-controls">
+            <div class="user-login">
+              <a href="#" class="login-btn" onclick="showLoginPopup()">Log in</a>
+            </div>
+            <div class="cart">
+              <a href="#">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+              </a>
+            </div>
+        </div>
+
+      </nav>
+    </header>
+      
+      <div class="login-popup">
+        <div class="login-popup-content">
+          <h2>Login</h2>
+          <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username"><br>
+      
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br>
+      
+            <input type="submit" value="Login">
+          </form>
+          <a href="#" class="close-btn">&times;</a>
+        </div>
+      </div>
+
+
+      
+    <div id="banner-slider">
+        <div class="slider-wrapper">
+          <img class="slider-image active" src="assets/img/banner1.jpg" alt="Slider Image 1">
+          <img class="slider-image" src="assets/img/banner2.jpg" alt="Slider Image 2">
+          <img class="slider-image" src="assets/img/banner1.jpg" alt="Slider Image 3">
+        </div>
+        <div class="slider-controls">
+          <button id="slider-prev">Prev</button>
+          <button id="slider-next">Next</button>
+        </div>
+    </div>
+      
+    
+    <div class="filter">
+        <label for="filter-category">Category:</label>
+        <select id="filter-category">
+          <option value="all">All</option>
+          <option value="electronics">Electronics</option>
+          <option value="clothing">Clothing</option>
+          <option value="home">Home</option>
+          <option value="sports">Sports</option>
+        </select>
+      </div>
+      
+      <div class="featured-products">
+        <div class="product" data-category="electronics">
+            <div class="product-image">
+              <img src="assets/img/product.png" alt="Product Name">
+            </div>
+            <div class="product-details">
+              <h3 class="product-name">SM-Watch D2014</h3>
+              <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, tellus eget ultricies lobortis, lorem eros bibendum libero, ac faucibus eros nulla vel nisi.</p>
+              <div class="product-price">$99.99</div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product" data-category="electronics">
+            <div class="product-image">
+              <img src="assets/img/product2.png" alt="Product Name">
+            </div>
+            <div class="product-details">
+              <h3 class="product-name">SM-Watch R1015</h3>
+              <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, tellus eget ultricies lobortis, lorem eros bibendum libero, ac faucibus eros nulla vel nisi.</p>
+              <div class="product-price">$99.99</div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product" data-category="clothing">
+            <div class="product-image">
+              <img src="assets/img/product3.png" alt="Product Name">
+            </div>
+            <div class="product-details">
+              <h3 class="product-name">SM-Watch S6014</h3>
+              <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, tellus eget ultricies lobortis, lorem eros bibendum libero, ac faucibus eros nulla vel nisi.</p>
+              <div class="product-price">$99.99</div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product" data-category="home">
+            <div class="product-image">
+              <img src="assets/img/product4.png" alt="Product Name">
+            </div>
+            <div class="product-details">
+              <h3 class="product-name">SM-Watch E2184</h3>
+              <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, tellus eget ultricies lobortis, lorem eros bibendum libero, ac faucibus eros nulla vel nisi.</p>
+              <div class="product-price">$99.99</div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product" data-category="sports">
+            <div class="product-image">
+              <img src="assets/img/product5.png" alt="Product Name">
+            </div>
+            <div class="product-details">
+              <h3 class="product-name">SM-Watch D2110</h3>
+              <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, tellus eget ultricies lobortis, lorem eros bibendum libero, ac faucibus eros nulla vel nisi.</p>
+              <div class="product-price">$99.99</div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product" data-category="sports">
+            <div class="product-image">
+              <img src="assets/img/product6.png" alt="Product Name">
+            </div>
+            <div class="product-details">
+              <h3 class="product-name">SM-Watch A1010</h3>
+              <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, tellus eget ultricies lobortis, lorem eros bibendum libero, ac faucibus eros nulla vel nisi.</p>
+              <div class="product-price">$99.99</div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+      </div>
+      
+      
+    
+    <section id="promo">
+      <h2>Get 10% Off Your First Purchase</h2>
+      <p>Sign up for our newsletter to receive exclusive discounts and be the first to know about our new arrivals.</p>
+      <a href="#" class="btn-primary">Sign Up Now</a>
+    </section>
+    
+    <footer>
+      <p>&copy; 2023 Ecommerce Site. All rights reserved.</p>
+    </footer>
+
+
+    <script src="assets/js/slider.js"></script>
+  </body>
+</html>
